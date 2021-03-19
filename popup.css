@@ -13,7 +13,7 @@
     transition: 1s;
 }
 
-.tc-container {
+.tc-container:hover {
     left: 0;
     transition: 1s;
 }
