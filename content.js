@@ -3,6 +3,7 @@ function runIt() {
     const ul = document.createElement('ul');
     const h1 = document.createElement('h1');
 
+
     var cssId = 'tc-css';
     if (!document.getElementById(cssId))
     {
@@ -24,20 +25,25 @@ function runIt() {
     document.body.appendChild(testCaseContainer);
 
     const createElement = (e) => {  
-        const li = document.createElement('li');
-        const tcList = document.querySelector('.tc-list');
-        const btnPass = document.createElement('BUTTON');
-        const btnFail = document.createElement('BUTTON');
-        const elem = e.target;
-        
-        btnPass.setAttribute("id", "tc-pass");
-        btnFail.setAttribute("id", "tc-fail");
-        li.innerText = "- click on " + elem.outerHTML;
-        btnPass.innerText = "pass";
-        btnFail.innerText = "fail";
-        li.appendChild(btnPass);
-        li.appendChild(btnFail);
-        tcList.appendChild(li);
+
+        if (e.target.id != "tc-pass") {
+            const li = document.createElement('li');
+            const tcList = document.querySelector('.tc-list');
+            const pass = document.createElement('BUTTON');
+            const elem = e.target;
+            
+            pass.setAttribute("id", "tc-pass");
+            pass.setAttribute('style', "padding-left: 5px; cursor: pointer");
+            pass.innerText = "pass";
+            li.innerText = "- click on " + elem.outerHTML;
+            li.appendChild(pass);
+            tcList.appendChild(li);
+        }
+
+        if (e.target.id == "tc-pass") {
+            console.log('juhuuu');
+        }
+
     }
 
     document.addEventListener('click', createElement);
