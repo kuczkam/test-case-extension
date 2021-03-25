@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Cases By Click</title>
-    <link rel="stylesheet" href="https://gitcdn.link/repo/kuczkam/test-case-extension/main/popup.css">
+    <link rel="stylesheet" href="popup.css">
 </head>
 <body>
     <div class="container">
-        <button id="btn-start">Start</button>
+        <div class="btn-wrapper">
+            <button id="btn-start" class="tc-btn">Start</button>
+            <button id="btn-stop" class="tc-btn">Stop</button>
+        </div>
+        <img src="icon.png" class="bug-icon">
+
     </div>
     <script src="popup.js"></script>
 </body>
