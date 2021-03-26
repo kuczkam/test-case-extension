@@ -6,7 +6,7 @@ Each click on a page item creates a test step. Each clicked element can be conve
 
 ## Setup
 Clone this repo to your desktop and change URL in `manifest.json` section `permissions`.
-After go to the [chrome://extensions](chrome://extensions) and enable developer mode.
+After go to the **chrome://extensions** and enable developer mode.
 Click **Load unpacked** and upload cloned repo(folder).
 
 ## Generated test case
