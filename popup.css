@@ -2,27 +2,36 @@
     border-radius: 20px;
     background: #3a2996;
     padding: 5px;
-    width: 70px;
+    width: 53px;
     margin: 7px 5px 5px 5px;
     color: #fff;
-    border: 2px solid;
+    border: none;
+    font-size: 12px;
 }
 .tc-btn:hover {
     background:#fff;
     color:#ff4954;
+    border: none;
 }
 
 .container {
     background: #ff4954;
     height: 146px;
+    width: 100px;
 }
 
 .bug-icon {
-    box-shadow: 2px 2px 5px #331f20;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+}
+
+.btn-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 63px;
+    display: block;
 }
